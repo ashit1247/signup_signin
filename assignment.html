@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asgn_style.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="logo">
+            <img src="target.png">
+            <span>TARGET</span>
+        </div>
+
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button class="toggle-button" onclick="login()">Sign In</button>
+                <button class="toggle-button" onclick="register()">Sign Up</button>
+            </div>
+
+            <div>
+                <h2 id="head1">Sign in to your account</h2><br>
+                <p>Believe in delivering excellence</p><br>
+
+                <a href="https://www.google.com" target="_blank"><button class="btn1"><img src="gp.png">
+                        <span class="demo2">Sign in with google</span></button></a>
+
+                <a href="https://www.facebook.com" target="_blank"><button class="btn2"><img src="fb.png">
+                        <span class="demo3">Sign in with facebook</span></button></a>
+
+
+                <br><br>
+                <hr>
+                <p class="or">OR</p>
+
+                <form id="login" class="input-box">
+                    <input type="email" class="input-field" placeholder="Email Address" required><br>
+                    <input type="password" class="input-field" placeholder="Password" required>
+                    <input type="checkbox" class="check-box"><span id="span1">Remember Password</span>
+                    <button type="submit" class="submit-btn">Sign In</button>
+                    <h3><a href="#" target="_blank">Forget Password</a></h3>
+                </form>
+
+                <form id="register" class="input-box">
+                    <input type="text" class="input-field" placeholder="First Name" required><br>
+                    <input type="text" class="input-field" placeholder="Last Name" required><br>
+                    <input type="email" class="input-field" placeholder="Email Address" required><br>
+                    <input type="password" class="input-field" placeholder="Password" required>
+
+                    <input type="checkbox" class="check-box"><span id="span2">I agree to your <a href="#"
+                            target="_blank"><b>Terms of Use</b></a> and your <a href="#" target="_blank"><b>Privacy
+                                Policy</b></a>. </span>
+                    <button type="submit" class="submit-btn">Sign Up</button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-500px";
+            y.style.left = "50px";
+            z.style.left = "160px";
+
+            document.getElementById("head1").innerHTML = "Create your account";
+            document.getElementsByClassName("demo2")[0].innerHTML = "Sign up with Google";
+            document.getElementsByClassName("demo3")[0].innerHTML = "Sign up with Facebook";
+        }
+
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "550px";
+            z.style.left = "0";
+
+            document.getElementById("head1").innerHTML = "Sign in to your account";
+            document.getElementsByClassName("demo2")[0].innerHTML = "Sign in with Google";
+            document.getElementsByClassName("demo3")[0].innerHTML = "Sign in with Facebook";
+        }
+
+    </script>
+</body>
+
+</html>
