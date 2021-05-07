@@ -1,3 +1,4 @@
 # signup_signin_webpage
-1. This is a basic design for sign up and sign in form along with toggle button to switch between sign up form and sign in form.
-2. This form facilitates user to sign up and sign using google or facebook.
+1. Webpage contained a form element along with a toggle button.
+2. Toggle button contains the sign-up form and sign-in form on click.
+3. Webpage also facilitates user to sign up and sign in using Facebook and Google account.
